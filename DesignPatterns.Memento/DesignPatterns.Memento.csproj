@@ -9,6 +9,9 @@
     <None Update="Exercise.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Exercise.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Memento Pattern - Class Diagram.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
