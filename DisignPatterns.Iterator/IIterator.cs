@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.Iterator
+﻿namespace DesignPatterns.Iterator
 {
     public interface IIterator
     {

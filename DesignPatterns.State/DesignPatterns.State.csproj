@@ -12,7 +12,7 @@
     <None Update="State Pattern - Classic Definition.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="State Pattern - DirectionService.png">
+    <None Update="State Pattern - Direction Service.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

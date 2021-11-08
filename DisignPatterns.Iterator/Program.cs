@@ -6,7 +6,7 @@ namespace DesignPatterns.Iterator
     {
         static void Main()
         {
-            var productCollection = new ProductCollection();
+            var productCollection = new ConcreteProductCollection();
             productCollection.Push(new Product(1, "Mobile Phone"));
             productCollection.Push(new Product(2, "Laptop"));
 
