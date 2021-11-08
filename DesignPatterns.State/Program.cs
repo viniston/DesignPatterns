@@ -4,9 +4,17 @@ namespace DesignPatterns.State
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var service = new DirectionService(new Walking());
+            service.GetEta();
+            service.GetDirection();
+
+            service.SetTravelMode(new Driving());
+            service.GetEta();
+            service.GetDirection();
+
+            Console.ReadLine();
         }
     }
 }

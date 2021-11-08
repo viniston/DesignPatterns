@@ -5,28 +5,21 @@ namespace DesignPatterns.Memento
 {
     public class DocumentHistory
     {
-        private readonly List<DocumentState> _states;
+        private readonly Stack<DocumentState> _states;
 
         public DocumentHistory()
         {
-            _states = new List<DocumentState>();
+            _states = new Stack<DocumentState>();
         }
 
         public void Push(DocumentState state)
         {
-            _states.Add(state);
+            _states.Push(state);
         }
 
         public DocumentState Pop()
         {
-            if (!_states.Any())
-            {
-                return null;
-            }
-            var lastIndex = _states.Count - 1;
-            var lastState = _states.ElementAt(lastIndex);
-            _states.RemoveAt(lastIndex);
-            return lastState;
+           return _states.Pop();
         }
     }
 }

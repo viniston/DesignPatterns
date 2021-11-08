@@ -9,22 +9,21 @@ namespace DesignPatterns.Memento
             var document = new Document();
             var history = new DocumentHistory();
 
-            document.SetContent("a");
+            document.SetContent("Hello");
             history.Push(document.CreateState());
-            Console.WriteLine($"Created state for {document.GetContent()}");
 
-            document.SetContent("b");
+            document.SetFontName("Font 1");
             history.Push(document.CreateState());
-            Console.WriteLine($"Created state for {document.GetContent()}");
 
-            document.SetContent("c");
-            Console.WriteLine($"Set document content as {document.GetContent()} but do not create any state");
+            document.SetFontSize(10);
+
+            Console.WriteLine(document);
 
             document.RestoreState(history.Pop());
-            Console.WriteLine($"Restored state to {document.GetContent()}");
+            Console.WriteLine(document);
 
             document.RestoreState(history.Pop());
-            Console.WriteLine($"Restored state to {document.GetContent()}");
+            Console.WriteLine(document);
 
             Console.ReadLine();
 
